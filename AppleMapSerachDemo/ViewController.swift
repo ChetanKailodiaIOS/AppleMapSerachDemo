@@ -68,7 +68,7 @@ extension ViewController : CLLocationManagerDelegate {
     
     private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)//MKCoordinateSpanMake(0.05, 0.05)
+            let span = MKCoordinateSpan(latitudeDelta: 0.10, longitudeDelta: 0.10)//MKCoordinateSpanMake(0.05, 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
