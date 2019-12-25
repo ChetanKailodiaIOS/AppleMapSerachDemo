@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         definesPresentationContext = true
         locationSearchTable.mapView = mapView
         locationSearchTable.handleMapSearchDelegate = self
-        //
+        //This is the Text Changes
     }
     
     func getDirections(){
@@ -68,7 +68,7 @@ extension ViewController : CLLocationManagerDelegate {
     
     private func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let span = MKCoordinateSpan(latitudeDelta: 0.1000, longitudeDelta: 0.1000)//MKCoordinateSpanMake(0.05, 0.05)
+            let span = MKCoordinateSpan(latitudeDelta: 0.1000, longitudeDelta: 0.1000)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
