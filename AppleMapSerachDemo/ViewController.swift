@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         definesPresentationContext = true
         locationSearchTable.mapView = mapView
         locationSearchTable.handleMapSearchDelegate = self
-        //This is the Text Changes
+        //This is the Text Changes Map Search
     }
     
     func getDirections(){
